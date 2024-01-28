@@ -6,61 +6,67 @@
     <link rel="stylesheet" href="style.css">
     <title>Calculator</title>
 </head>
-<body>
-    <div style="text-align: center; font-size: 24px; color: orange;background-color: #3b3b3b; width: 290px; margin: auto;">
+<br>
+    <div style="text-align: center; font-size: 24px; color: orange;background-color: #3b3b3b; width: 570px; margin: auto;">
     Calculator
     </div>
     <div class="container">
-        <div class="monitor">17.45</div>
-        <div class="but">C</div>
-        <div class="but">+/-</div>
-        <div class="but">%</div>
-        <div class="signBut">÷</div>
-        <div class="numberBut">7</div>
-        <div class="numberBut">8</div>
-        <div class="numberBut">9</div>
-        <div class="signBut">x</div>
-        <div class="numberBut">4</div>
-        <div class="numberBut">5</div>
-        <div class="numberBut">6</div>
-        <div class="signBut">-</div>
-        <div class="numberBut">1</div>
-        <div class="numberBut">2</div>
-        <div class="numberBut">3</div>
-        <div class="signBut">+</div>
-        <div class="numberBut" style="padding: 16px 70px 16px 0px;">0</div>
-        <div class="numberBut">.</div>
-        <div class="signBut">=</div>
-        <div style="clear: both;"></div>
+        <div class="monitor" id="display">0</div>
+        <div>
+            <div class="operationBut" id="nthRoot"><sup>n</sup>√x</div>
+            <div class="operationBut" id="ythSquare">x<sup>y</sup></div>
+            <div class="operationBut" id="powerOf10">10<sup>x</sup></div>
+            <div class="but" id="acButton">AC</div>
+            <div class="but" id="plusMinus">+/-</div>
+            <div class="but" id="percent">%</div>
+            <div class="signBut">÷</div></div>
+            <div style="clear: both;"></div>
+        </div>
+        <div class="container">
+            <div class="operationBut" id="3rdSquare">x<sup>3</sup></div>
+            <div class="operationBut" id="2ndSquare">x<sup>2</sup></div>
+            <div class="operationBut" id="log">log<sub>10</sub></div>
+            <div class="numberBut">7</div>
+            <div class="numberBut">8</div>
+            <div class="numberBut">9</div>
+            <div class="signBut">✕</div>
+            <div style="clear: both;"></div>
+        </div>
+        <div class="container">
+            <div class="operationBut" id="3rdRoot"><sup>3</sup>√x</div>
+            <div class="operationBut" id="2ndRoot"><sup>2</sup>√x</div>
+            <div class="operationBut" id="exponent">e<sup>x</sup></div> 
+            <div class="numberBut">4</div>
+            <div class="numberBut">5</div>
+            <div class="numberBut">6</div>
+            <div class="signBut">—</div>
+            <div style="clear: both;"></div>
+        </div>
+        <div class="container">
+            <div class="operationBut" id="opposite">⅟<sub>x</sub></div>
+            <div class="operationBut" id="factorial">x!</div>
+            <div class="operationBut" id="ln">ln</div>
+            <div class="numberBut">1</div>
+            <div class="numberBut">2</div>
+            <div class="numberBut">3</div>
+            <div class="signBut">+</div>
+            <div style="clear: both;"></div>
+        </div>
+        <div class="container">
+            <div class="numberBut" style="background-color: #1f1f1f;" id="pi">π</div>
+            <div class="numberBut" style="background-color: #1f1f1f;" id="eNumber">e</div>
+            <div class="numberBut" style="background-color: #1f1f1f;" id="eNumber">Rand</div>
+            <div class="numberBut" style="padding: 16px 80px 16px 0px;">0</div>
+            <div class="numberBut" id="decimal">.</div>
+            <div class="signBut">=</div>
+            <div style="clear: both;"></div>
+        </div>
     </div>
 
+    <script type="text/javascript" src="script.js"></script>  
     <!-- special scripts for integration in App Gallery - must be placed at the bottom of the HTML after your code -->
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <script>
-        // custom config for the MTW app 
-        const mtwAppConfig = {
-            border: true // app border in the MTW page                    
-        }
-
-        ///////////////////////////////////////////////////////
-        // implement this functions in order to use private API        
-        const sendPrivateApiRequest = async () => {
-            // your code here:
-            // sendRequestToParent({ cat: 'getAssets' })
-        }        
-
-        const acceptPrivateApiResponse = async (data) => {
-            // process received data here:
-            // console.log(data)
-        }
-
-        // use this in order to send on document load
-        document.addEventListener('DOMContentLoaded', () => {
-            // your code here:
-            //sendRequestToParent({ method: 'getAssets' })
-        })
-
-    </script>
     <script src="https://morethanwallet.com/appstore/index.js"></script>
+
 </body>
 </html>

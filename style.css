@@ -1,12 +1,13 @@
 body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .container{
-    width: 280px;
-    /* margin: 40px auto; */
+    width: 560px;
+    /* align-items: flex-start; */
     background-color: black;
     margin: auto; 
     padding: 5px;
+    /* position: relative; */
 }
 .monitor{
     background-color: black;
@@ -14,11 +15,11 @@ body{
     color: white;
     font-size: 50px;
     text-align: right;
-    width: 265px;
+    width: 560px;
 }
 .but{
     float: left;
-    width: 60px;
+    width: 70px;
     padding:16px 0px 16px 0px;
     margin: 5px;
     text-align: center;
@@ -32,7 +33,7 @@ body{
 }
 .numberBut{
     float: left;
-    width: 60px;
+    width: 70px;
     padding:16px 0px 16px 0px;
     margin: 5px;
     text-align: center;
@@ -47,7 +48,7 @@ body{
 }
 .signBut{
     float: left;
-    width: 60px;
+    width: 70px;
     padding: 16px 0px 16px 0px;
     margin: 5px;
     background-color: orange;
@@ -61,15 +62,18 @@ body{
     background-color: #ffdfa3;
     color: orange;
 }
-.result{
+.operationBut{
+    float: left;
+    width: 70px;
+    padding:16px 0px 16px 0px;
     margin: 5px;
-    background-color: white;
     text-align: center;
-    padding-top: 5px;
-    border-radius: 4px;
+    font-size: 24px;
+    border-radius: 30px;
     cursor: pointer;
-}
-.result:hover{
-    background-color: blue;
+    background-color: #1f1f1f;
     color: white;
+}
+.operationBut:hover{
+    background-color: darkslategray;
 }
